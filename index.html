@@ -1,48 +1,244 @@
-03.17 00.08
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oyen Army</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#111; color:#fff; margin:0; padding:0; text-align:center; }
-    header { background:#ff6f61; padding:40px 20px; }
-    h1 { font-size:3em; margin:0; }
-    section { padding:40px 20px; }
-    a { color:#ff6f61; text-decoration:none; font-weight:bold; }
-    footer { background:#222; padding:20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Oyen Army</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0e0e0e;
+color:white;
+text-align:center;
+}
+
+header{
+padding:60px 20px;
+background:linear-gradient(45deg,#ff8c00,#ff3c00);
+}
+
+.logo{
+width:120px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:44px;
+margin:10px 0;
+}
+
+button{
+padding:14px 28px;
+margin:10px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+background:#ff7a00;
+color:white;
+}
+
+button:hover{
+background:#ff9c3a;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.countdown{
+font-size:28px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+.roadmap{
+text-align:left;
+max-width:500px;
+margin:auto;
+}
+
+footer{
+background:#111;
+padding:30px;
+color:#888;
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <h1> Oyen Army</h1>
-    <p>The rise of the meme army on Solana!</p>
-  </header>
 
-  <section>
-    <h2>Vision</h2>
-    <p>Building a strong community-driven meme project on Solana. Launching March 20!</p>
-  </section>
+<header>
 
-  <section>
-    <h2>Links</h2>
-    <p><a href="https://t.me/oyencoin_ID">Telegram Community</a></p>
-    <p><a href="https://x.com/OyenC69610">Official X Account</a></p>
-  </section>
+<img src="oyen-logo.png" class="logo">
 
-  <section>
-    <h2>Roadmap</h2>
-    <ul style="list-style:none; padding:0;">
-      <li> Community building – now</li>
-      <li> Launch on Solana – March 20</li>
-      <li> Meme campaigns & X raids – post-launch</li>
-      <li> Expansion across Solana ecosystem – Q2</li>
-    </ul>
-  </section>
+<h1>Oyen Army</h1>
 
-  <footer>
-    <p>© 2026 Oyen Army | Built for the community</p>
-  </footer>
+<p>The meme uprising on Solana</p>
+
+<div id="countdown" class="countdown"></div>
+
+<br>
+
+<a href="https://t.me/oyencoin_ID">
+<button>Join Telegram</button>
+</a>
+
+<a href="https://x.com/OyenC69610">
+<button>Follow on X</button>
+</a>
+
+</header>
+
+<section>
+
+<h2>Vision</h2>
+
+<p>
+Oyen Army is a community-driven meme project on Solana.
+Our goal is simple — build the strongest meme community
+and spread Oyen across the crypto world.
+</p>
+
+</section>
+
+<section>
+
+<h2>Tokenomics</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Supply</h3>
+<p>1,000,000,000</p>
+</div>
+
+<div class="card">
+<h3>Tax</h3>
+<p>0%</p>
+</div>
+
+<div class="card">
+<h3>Launch</h3>
+<p>March 20</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Roadmap</h2>
+
+<div class="roadmap">
+
+<p><b>Phase 1</b></p>
+<ul>
+<li>Community building</li>
+<li>Telegram & X growth</li>
+<li>Oyen Army formation</li>
+</ul>
+
+<p><b>Phase 2</b></p>
+<ul>
+<li>Token launch</li>
+<li>Meme marketing</li>
+<li>Community raids</li>
+</ul>
+
+<p><b>Phase 3</b></p>
+<ul>
+<li>Partnerships</li>
+<li>Ecosystem expansion</li>
+<li>Global meme takeover</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>FAQ</h2>
+
+<p><b>When launch?</b><br>
+March 20.</p>
+
+<p><b>Is the project community driven?</b><br>
+Yes. Oyen Army is powered by community.</p>
+
+<p><b>Where to follow updates?</b><br>
+Telegram and X.</p>
+
+</section>
+
+<section>
+
+<h2>Security</h2>
+
+<p>
+⚠️ The team will NEVER DM you first.<br>
+⚠️ No private sales.<br>
+⚠️ Always verify official links.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Oyen Army</p>
+
+</footer>
+
+<script>
+
+var launchDate = new Date("Mar 20, 2026 00:00:00").getTime();
+
+var timer = setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = launchDate - now;
+
+var days = Math.floor(distance / (1000*60*60*24));
+var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+var seconds = Math.floor((distance % (1000*60))/1000);
+
+document.getElementById("countdown").innerHTML =
+days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
+
+if(distance < 0){
+clearInterval(timer);
+document.getElementById("countdown").innerHTML = "LAUNCHED";
+}
+
+},1000);
+
+</script>
+
 </body>
 </html>
